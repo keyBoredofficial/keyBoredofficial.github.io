@@ -1,2 +1,2 @@
 # keyBoredofficial.github.io
-## welcome
+And sucks
