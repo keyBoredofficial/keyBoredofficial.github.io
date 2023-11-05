@@ -26,4 +26,9 @@
 
 .logo{
     color: #ff7200;
+    font-size: 25px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
 }
