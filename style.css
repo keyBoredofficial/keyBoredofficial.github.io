@@ -65,3 +65,13 @@ ul li a{
 ul li a:hover{
     color: rgb(153,153,153);
 }
+
+
+.search-icon {
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    background: url("2.jpg") no-repeat center center; 
+    background-size: cover;
+}
