@@ -71,7 +71,8 @@ ul li a:hover{
     float: right;
     width: 30px;
     height: 30px;
+    margin-top: 20px;
     margin-right: 20px;
-    background: url("2.jpg") no-repeat center center; 
+    background: url("2.png") no-repeat center center; 
     background-size: cover;
 }
