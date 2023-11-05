@@ -16,7 +16,7 @@
     width: 1537px;
     height: 75px;
     margin: none;
-    background: rgb(63,63,63)50%;
+    background: rgb(63,63,63)75%;
 }
 
 .icon{
@@ -29,7 +29,7 @@
     color: rgb(255,255,255);
     font-size: 25px;
     font-family: Arial;
-    padding-left: 20px;
+    padding-left: 50px;
     float: left;
     padding-top: 10px;
 }
