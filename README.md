@@ -1,2 +1,2 @@
 # keyBored
-Andy sucks
+A
