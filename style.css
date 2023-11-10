@@ -29,6 +29,7 @@ body {
 .logo {
     font-family: Arial;
     margin: 0;
+    padding: 20px;
 }
 
 /* Style the menu items */
@@ -57,5 +58,5 @@ body {
 /* Add some basic styling to the search box */
 .search {
     border: 1px solid #ccc;
-    padding: 5px;
+    padding: 20px;
 }
