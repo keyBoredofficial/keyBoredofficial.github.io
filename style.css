@@ -41,7 +41,7 @@ body {
 }
 
 .menu li {
-    margin-right: 100px;
+    margin-right: 20px; /* Reduced margin for larger screens */
 }
 
 .menu a {
@@ -59,4 +59,11 @@ body {
 .search {
     border: 1px solid #ccc;
     padding: 20px;
+}
+
+/* Media query for smaller screens (e.g., phones) */
+@media only screen and (max-width: 600px) {
+    .menu li {
+        margin-right: 0; /* Remove right margin for smaller screens */
+    }
 }
