@@ -22,11 +22,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: arial;
 }
 
 /* Style the logo */
 .logo {
     margin: 0;
+    font-family: Arial;
 }
 
 /* Style the menu items */
