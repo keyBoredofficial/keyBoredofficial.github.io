@@ -38,12 +38,17 @@ body {
 }
 
 .menu li {
-    margin-right: 15px;
+    margin-right: 30px;
 }
 
 .menu a {
     text-decoration: none;
     color: white;
+    transition: color 0.3s; /* Add a smooth transition effect */
+}
+
+.menu a:hover {
+    color: grey; /* Change the text color to grey on hover */
 }
 
 /* Add some basic styling to the search box */
