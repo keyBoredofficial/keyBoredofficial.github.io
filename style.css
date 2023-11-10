@@ -47,4 +47,6 @@
     .menu-button.active + .menu-responsive {
         display: flex;
     }
+
+    /* Adjust other styles as needed for smaller screens */
 }

@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Webpage Design</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="main">
-            <div class="navbar">
-                <div class="icon">
-                    <h2 class="logo">keyBored</h2>
-                </div>
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">keyBored</h2>
+            </div>
 
-                <!-- Add this button for small screens -->
-                <div class="menu-button" onclick="toggleMenu()">Menu</div>
+            <!-- Add this button for small screens -->
+            <div class="menu-button" onclick="toggleMenu()">Menu</div>
 
-                <!-- Add this responsive menu -->
-                <div class="menu-responsive">
-                    <ul>
-                        <li><a href="#">home</a></li>
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">service</a></li>
-                        <li><a href="#">design</a></li>
-                        <li><a href="#">contact</a></li>
-                    </ul>
-                </div>
+            <!-- Add this responsive menu -->
+            <div class="menu-responsive">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">service</a></li>
+                    <li><a href="#">design</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
 
-                <div class="search">
-                </div>
+            <div class="search">
             </div>
         </div>
+    </div>
 
-        <!-- Add this script to handle the toggle functionality -->
-        <script>
-            function toggleMenu() {
-                var menuResponsive = document.querySelector('.menu-responsive');
-                menuResponsive.style.display = (menuResponsive.style.display === 'flex') ? 'none' : 'flex';
-            }
-        </script>
-    </body>
+    <!-- Add this script to handle the toggle functionality -->
+    <script>
+        function toggleMenu() {
+            var menuResponsive = document.querySelector('.menu-responsive');
+            menuResponsive.style.display = (menuResponsive.style.display === 'flex') ? 'none' : 'flex';
+        }
+    </script>
+</body>
 </html>
