@@ -1,69 +1,50 @@
-/* Reset some default margin and padding on the body and html elements */
-body, html {
-    margin: 0;
-    padding: 0;
-}
-
-/* Set the height to 200vh (200% of the viewport height) */
-body {
-    height: 200vh;
-}
-
-/* Set the width to 100% to make it scale with the screen size */
-.main {
-    width: 100%;
-}
-
-/* Add some basic styling to the navbar */
-.navbar {
-    align-items: center;
-    background-color: #333;
-    color: white;
-    display: flex;
-    font-family: Arial;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-/* Style the logo */
-.logo {
-    font-family: Arial;
-    margin: 0;
-    padding: 20px;
-}
-
-/* Style the menu items */
-.menu ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu li {
-    margin-right: 20px; /* Reduced margin for larger screens */
-}
-
-.menu a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s; /* Add a smooth transition effect */
-}
-
-.menu a:hover {
-    color: grey; /* Change the text color to grey on hover */
-}
-
-/* Add some basic styling to the search box */
-.search {
-    border: 1px solid #ccc;
-    padding: 20px;
-}
+/* Your existing styles... */
 
 /* Media query for smaller screens (e.g., phones) */
 @media only screen and (max-width: 600px) {
-    .menu li {
-        margin-right: 0; /* Remove right margin for smaller screens */
+    .menu {
+        display: none; /* Hide the menu by default on small screens */
+    }
+
+    .menu-button {
+        display: block; /* Show the button on small screens */
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .menu-button:hover {
+        background-color: #555;
+    }
+
+    .menu-responsive {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust the top position as needed */
+        right: 10px;
+        background-color: #333;
+        padding: 10px;
+        z-index: 1;
+    }
+
+    .menu-responsive a {
+        color: white;
+        text-decoration: none;
+        padding: 8px;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    .menu-responsive a:hover {
+        color: grey;
+    }
+
+    /* Show the menu when the button is clicked */
+    .menu-button.active + .menu-responsive {
+        display: flex;
     }
 }
