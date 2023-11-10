@@ -1,3 +1,53 @@
+/* Reset some default margin and padding on the body and html elements */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the height to 200vh (200% of the viewport height) */
+body {
+    height: 200vh;
+}
+
+/* Set the width to 100% to make it scale with the screen size */
 .main {
-    
+    width: 100%;
+}
+
+/* Add some basic styling to the navbar */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the logo */
+.logo {
+    margin: 0;
+}
+
+/* Style the menu items */
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Add some basic styling to the search box */
+.search {
+    border: 1px solid #ccc;
+    padding: 5px;
 }
