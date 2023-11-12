@@ -15,6 +15,11 @@ body {
     align-items: center;
 }
 
+.navbar .logo {
+    color: white;
+    font-size: 1.5em;
+}
+
 .navbar a {
     color: white;
     margin: 0 15px;
@@ -29,36 +34,37 @@ body {
 .mobile-menu {
     display: none;
     cursor: pointer;
+    color: white;
 }
 
 @media only screen and (max-width: 600px) {
-    .navbar a {
+    .navbar .desktop-menu {
         display: none;
     }
 
     .mobile-menu {
         display: block;
     }
-}
 
-/* Dropdown Menu for Mobile */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    min-width: 160px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    z-index: 1;
-}
+    /* Dropdown Menu for Mobile */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        min-width: 160px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        z-index: 1;
+    }
 
-.dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
 
-.dropdown-content a:hover {
-    background-color: grey;
+    .dropdown-content a:hover {
+        background-color: grey;
+    }
 }
