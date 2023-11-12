@@ -1,107 +1,64 @@
-/* Reset some default margin and padding on the body and html elements */
-body, html {
-    margin: 0;
-    padding: 0;
-}
-
-/* Set the height to 200vh (200% of the viewport height) */
 body {
-    height: 200vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-/* Set the width to 100% to make it scale with the screen size */
-.main {
-    width: 100%;
-}
-
-/* Add some basic styling to the navbar */
+/* Navigation Bar */
 .navbar {
-    align-items: center;
     background-color: #333;
+    padding: 15px;
     color: white;
-    display: flex;
-    font-family: Arial;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-/* Style the logo */
-.logo {
-    font-family: Arial;
-    margin: 0;
-    padding: 20px;
-}
-
-/* Style the menu items */
-.menu ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu li {
-    margin-right: 20px;
-}
-
-.menu a {
-    color: white;
+    text-align: center;
     font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 15px;
     text-decoration: none;
-    transition: color 0.3s; /* Add a smooth transition effect */
 }
 
-.menu a:hover {
-    color: grey; /* Change the text color to grey on hover */
+.navbar a:hover {
+    color: grey;
 }
 
-/* Add some basic styling to the search box */
-.search {
-    border: 1px solid #ccc;
-    padding: 20px;
+/* Mobile Navigation */
+.mobile-menu {
+    display: none;
+    cursor: pointer;
 }
 
-/* Media query for smaller screens (e.g., phones) */
 @media only screen and (max-width: 600px) {
-    .menu li {
-        margin-right: 0; /* Remove right margin for smaller screens */
-    }
-
-    .menu-button {
-        display: block; /* Show the button on small screens */
-        background-color: #333;
-        color: white;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-        font-size: 16px;
-    }
-
-    .menu-responsive {
+    .navbar a {
         display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px; /* Adjust the top position as needed */
-        right: 10px;
-        background-color: #333;
-        padding: 10px;
-        z-index: 1;
     }
 
-    .menu-responsive a {
-        color: white;
-        text-decoration: none;
-        padding: 8px;
-        font-weight: bold;
-        transition: color 0.3s;
+    .mobile-menu {
+        display: block;
     }
+}
 
-    .menu-responsive a:hover {
-        color: grey;
-    }
+/* Dropdown Menu for Mobile */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
 
-    /* Show the menu when the button is clicked */
-    .menu-button.active + .menu-responsive {
-        display: flex;
-    }
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: grey;
 }
